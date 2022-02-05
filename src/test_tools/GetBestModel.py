@@ -20,15 +20,15 @@ sys.path.append("..")
 """
 parser = argparse.ArgumentParser()
 parser.add_argument("-dataset",
-                    help="Dataset to run.", default='OpenDataset_Filter_yuan')
+                    help="Dataset to run.", default='RadioML2016.10a')
 parser.add_argument("-method",
                     help="Method.", default='SC')
 parser.add_argument("-filt_dataset",
                     help="Second dataset to run, for dual-channel input.", default='')
 parser.add_argument("-path",
-                    help="Project path.", default='/home/gongjuren/disk2/lsa/RobustMR')
+                    help="Project path.", default='.')
 parser.add_argument("-models",
-                    help="Models path.", default='/home/gongjuren/disk2/lsa/RobustMR/saved_models')
+                    help="Models path.", default='Outputs')
 parser.add_argument("-snr", type=int,
                     help="SNR to run.", default=-4)
 parser.add_argument("-gpu",
